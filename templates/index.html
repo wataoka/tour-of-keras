@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include "head.html" %}
+    </head>
+    <body>
+        <!-- navigation bar-->
+        {% include "navbar.html" %}
+
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            {% include "sidebar.html" %}
+
+            <!-- content -->
+            <div id="content">
+                <div class=row>
+                    <!-- desctiption  -->
+                    <div class="description-container">
+                        {{ description }}
+                    </div>
+                    <!-- Code -->
+                    <div class="code-wrapper">
+                        <div class="code-title-container">test</div>
+                        <div class="code-container">
+                            {% include "code.html" %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery and JS -->
+        {% include "jq-js.html" %}
+    </body>
+</html>
